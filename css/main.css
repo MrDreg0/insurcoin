@@ -365,6 +365,49 @@ header .btn-outline {
   background-image: url('../img/social-icons/linked-in.png');
 }
 
+.timer-block {
+  margin: 0;
+  padding: 30px;
+  width: 45%;
+  position: absolute;
+  top: 170px;
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 25px;
+  z-index: 10;
+}
+
+.timer-block h3 {
+  margin-bottom: 20px;
+  color: #307ed3;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.timer-block p {
+  color: #307ed3;
+}
+
+.timer-block div {
+  margin-bottom: 50px;
+}
+
+.timer-element span {
+  font-family: 'ProximaNova';
+  font-weight: 600;
+}
+
+.timer-element>span:first-child {
+  padding: 17px;
+  margin-bottom: 10px;
+  background-color: #307ed3;
+  border-radius: 10px;
+  width: 101px;
+  height: 77px;
+  text-align: center;
+}
+
 .about-project {
   margin: 0 0 0 auto;
   padding: 71px 0px 35px 14px;

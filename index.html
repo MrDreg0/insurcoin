@@ -87,7 +87,16 @@
       </section>
       <div class="timer-block">
         <h3>Старт продаж ICO</h3>
-        <script src="http://megatimer.ru/s/72c5170e3410452ce516bae095a8d5c8.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://e-timer.ru/js/etimer.js"></script>
+        <script type="text/javascript">
+          jQuery(document).ready(function() {
+            jQuery(".eTimer").eTimer({
+              etType: 0, etDate: "01.09.2018.0.0", etTitleText: "", etTitleSize: 20, etShowSign: 1, etSep: " ", etFontFamily: "ProximaNova", etTextColor: "#307ed3", etPaddingTB: 15, etPaddingLR: 15, etLastUnit: 4, etNumberFontFamily: "ProximaNova", etNumberSize: 45, etNumberColor: "white", etNumberPaddingTB: 0, etNumberPaddingLR: 8, etNumberBackground: "#307ed3", etNumberBorderSize: 0, etNumberBorderRadius: 6, etNumberBorderColor: "white"
+            });
+          });
+        </script>
+        <div class="eTimer"></div>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus sit tempora temporibus, libero est maiores, officiis nostrum et perspiciatis alias dignissimos esse facilis adipisci ullam quam unde, a laboriosam suscipit enim fuga architecto obcaecati? Repellendus.</p>
       </div>
     </div>

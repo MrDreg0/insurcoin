@@ -406,23 +406,12 @@ header .btn-outline {
   color: #307ed3;
 }
 
-.timer-block div {
-  margin-bottom: 50px;
+ .timer-block .eTimer {
+  padding: 15px 40px;;
 }
 
-.timer-element span {
-  font-family: 'ProximaNova';
+.etNumber {
   font-weight: 600;
-}
-
-.timer-element>span:first-child {
-  padding: 17px;
-  margin-bottom: 10px;
-  background-color: #307ed3;
-  border-radius: 10px;
-  width: 101px;
-  height: 77px;
-  text-align: center;
 }
 
 .about-project {

@@ -9,51 +9,55 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="nav-wrapper">
-        <img src="img/logo.png" class="main-logo" alt="Логотип сайта" width="108" height="14">
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="#">О проекте</a>
+    <div class="nav-block">
+      <div class="container">
+        <div class="nav-wrapper">
+          <img src="img/logo.png" class="main-logo" alt="Логотип сайта" width="108" height="14">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="#">О проекте</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">Дорожная карта</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">Команда</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">СМИ о нас</a>
+              </li> 
+            </ul>
+          </nav>
+          <ul class="user-nav__list">
+            <li class="user-nav__item">
+              <button class="btn login">Войти</button>
             </li>
-            <li class="main-nav__item">
-              <a href="#">Дорожная карта</a>
+            <li class="user-nav__item">
+              <button class="btn toggle-language">
+                <svg class="ru-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 512 512">
+                  <circle style="fill:#F0F0F0;" cx="256" cy="256" r="256"/>
+                  <path style="fill:#0052B4;" d="M496.077,345.043C506.368,317.31,512,287.314,512,256s-5.632-61.31-15.923-89.043H15.923
+                  C5.633,194.69,0,224.686,0,256s5.633,61.31,15.923,89.043L256,367.304L496.077,345.043z"/>
+                  <path style="fill:#D80027;" d="M256,512c110.071,0,203.906-69.472,240.077-166.957H15.923C52.094,442.528,145.929,512,256,512z"/>
+                  <g>
+                </svg>
+                RU
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 41.999 41.999">
+                  <path d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40
+                  c0,0.372,0.206,0.713,0.535,0.886c0.146,0.076,0.306,0.114,0.465,0.114c0.199,0,0.397-0.06,0.568-0.177l29-20
+                  c0.271-0.187,0.432-0.494,0.432-0.823S36.338,20.363,36.068,20.176z"/>
+                  <g>
+                </svg>
+              </button>
             </li>
-            <li class="main-nav__item">
-              <a href="#">Команда</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">СМИ о нас</a>
-            </li> 
           </ul>
-        </nav>
-        <ul class="user-nav__list">
-          <li class="user-nav__item">
-            <button class="btn login">Войти</button>
-          </li>
-          <li class="user-nav__item">
-            <button class="btn toggle-language">
-              <svg class="ru-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 512 512">
-                <circle style="fill:#F0F0F0;" cx="256" cy="256" r="256"/>
-                <path style="fill:#0052B4;" d="M496.077,345.043C506.368,317.31,512,287.314,512,256s-5.632-61.31-15.923-89.043H15.923
-                C5.633,194.69,0,224.686,0,256s5.633,61.31,15.923,89.043L256,367.304L496.077,345.043z"/>
-                <path style="fill:#D80027;" d="M256,512c110.071,0,203.906-69.472,240.077-166.957H15.923C52.094,442.528,145.929,512,256,512z"/>
-                <g>
-              </svg>
-              RU
-              <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 41.999 41.999">
-                <path d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40
-                c0,0.372,0.206,0.713,0.535,0.886c0.146,0.076,0.306,0.114,0.465,0.114c0.199,0,0.397-0.06,0.568-0.177l29-20
-                c0.271-0.187,0.432-0.494,0.432-0.823S36.338,20.363,36.068,20.176z"/>
-                <g>
-              </svg>
-            </button>
-          </li>
-        </ul>
+        </div>
       </div>
+    </div>
+    <div class="container header-block__wrapper">
       <section>
         <h1>Insurcoin</h1>
         <h3>Первая биржа опционов с возможностью страхования депозитов от падения</h3>
@@ -83,7 +87,7 @@
       </section>
       <div class="timer-block">
         <h3>Старт продаж ICO</h3>
-        <script src="js/timer.js"></script>
+        <script src="http://megatimer.ru/s/72c5170e3410452ce516bae095a8d5c8.js"></script>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus sit tempora temporibus, libero est maiores, officiis nostrum et perspiciatis alias dignissimos esse facilis adipisci ullam quam unde, a laboriosam suscipit enim fuga architecto obcaecati? Repellendus.</p>
       </div>
     </div>

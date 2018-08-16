@@ -9,20 +9,20 @@
 </head>
 <body>
   <header>
-    <div class="nav-block">
+    <div class="nav-block" id="menu">
       <div class="container">
-        <div class="nav-wrapper">
-          <img src="img/logo.png" class="main-logo" alt="Логотип сайта" width="108" height="14">
+        <div class="nav-wrapper large">
+          <a href="#top-site"><img src="img/logo.png" class="main-logo" alt="Логотип сайта" width="108" height="14"></a>
           <nav class="main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a href="#">О проекте</a>
+                <a href="#about-project">О проекте</a>
               </li>
               <li class="main-nav__item">
-                <a href="#">Дорожная карта</a>
+                <a href="#road-map">Дорожная карта</a>
               </li>
               <li class="main-nav__item">
-                <a href="#">Команда</a>
+                <a href="#team-project">Команда</a>
               </li>
               <li class="main-nav__item">
                 <a href="#">СМИ о нас</a>
@@ -57,7 +57,7 @@
         </div>
       </div>
     </div>
-    <div class="container header-block__wrapper">
+    <div class="container header-block__wrapper" id="top-site">
       <section>
         <h1>Insurcoin</h1>
         <h3>Первая биржа опционов с возможностью страхования депозитов от падения</h3>
@@ -101,7 +101,7 @@
   </header>
   <main>
     <div class="container">
-      <section class="about-project">
+      <section class="about-project" id="about-project">
         <h2>О проекте</h2>
         <p>Опцион – это договор, согласно которого покупатель опциона получает право, не обязательство, совершить покупку или продажу актива по заранее оговоренной цене, на протяжении определенного отрезка времени в будущем. При этом продавец опциона несёт обязательство соответственно продать актив или купить его у покупателя опциона в соответствии с его условиями.</p>
         <p class="about-project__description">Согласитесь, звучит крайне сложно! Именно поэтому проект разделен на 2 направления: <span class="text__semibold">опционную биржу и страховую компанию</span>.</p>
@@ -270,7 +270,7 @@
       </div>
     </section>
     <div class="container">
-      <section class="road-map">
+      <section class="road-map" id="road-map">
         <h2>Дорожная карта</h2>
         <ul>
           <li>
@@ -341,7 +341,7 @@
       </section>
     </div>
     <div class="container">
-      <section class="team-project">
+      <section class="team-project" id="team-project">
         <h2>Команда проекта</h2>
         <ul class="team__list">
           <li>
@@ -490,5 +490,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

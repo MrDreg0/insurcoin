@@ -137,11 +137,20 @@ header section::before {
 }
 
 .nav-wrapper {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  transition: all 0.5s;
+}
+
+.large {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.small {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .nav-block::before {
@@ -911,7 +920,7 @@ header .btn-outline {
 }
 
 .team-project {
-  padding-top: 42px;
+  padding-top: 73px;
   padding-bottom: 145px;
   width: 100%;
 }

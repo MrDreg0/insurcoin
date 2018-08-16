@@ -947,7 +947,7 @@ header .btn-outline {
   text-align: center;
 }
 
-.team-project ul {
+.team-project .team__list {
   margin: 0;
   padding: 0;
   padding-top: 24px;
@@ -958,9 +958,12 @@ header .btn-outline {
   list-style: none;
 }
 
-.team-project li {
-  margin-bottom: 30px;
+.team-project .team__list>li {
+  margin-bottom: 50px;
   width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -976,6 +979,25 @@ header .btn-outline {
 
 .team-project p {
   margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.team-project .social__list {
+  margin: auto 0 0;
+}
+
+.team-project .social__item {
+  margin-right: 0;
+}
+
+.team-project .social__link {
+  background-color: transparent;
+  opacity: 0.7;
+}
+
+.team-project .social__link:hover,
+.team-project .social__link:focus {
+  opacity: 1;
 }
 
 footer {

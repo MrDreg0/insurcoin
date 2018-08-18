@@ -77,8 +77,13 @@ a {
   text-decoration: none;
 }
 
+.open-mobile-menu,
+.close-mobile-menu {
+  display: none;
+}
+
 .container {
-  width: 1230px;
+  max-width: 1230px;
   padding: 0 30px;
   margin: 0 auto;
   position: relative;
@@ -115,8 +120,8 @@ header::before {
   position: absolute;
   right: 0;
   top: 16%;
-  width: 664px;
-  height: 531px;
+  width: 100%;
+  height: 100%;
   background-image: url('../img/header-bg.png');
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -195,20 +200,20 @@ section h2 {
 section::before {
   content: '';
   position: absolute;
-  width: 663px;
-  height: 763px;
+  width: 100%;
+  height: 100%;
   background-image: url('../img/pattern-section.png');
   background-position: 0 0;
   background-repeat: no-repeat;
-  transform: scale(0.96);
+  background-size: 96%;
   z-index: -1;
 }
 
 section::after {
   content: '';
   position: absolute;
-  width: 0;
-  height: 0;
+  width: 100%;
+  height: 100%;
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -1064,4 +1069,377 @@ footer a {
   height: 40px;
   display: block;
   font-size: 0.875rem;
+}
+
+
+
+@media (max-width: 480px) {
+  section {
+    width: 100% !important;
+  }
+
+  section::after {
+    background-size: contain;
+  }
+
+  section::before {
+    background-size: contain;
+  }
+
+  h1 {
+    font-size: 3.2375rem;
+    line-height: 3.2375rem;
+  }
+
+  .container {
+    max-width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .nav-block {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: #262bae;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+  
+  header section {
+    padding-top: 10px;
+    padding-bottom: 46px;
+  }
+
+  header section::before {
+    top: 27%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-open {
+    display: block;
+    width: 50%;
+  }
+
+  .nav-block .container {
+    padding: 0 40px;
+    width: 100%;
+  }
+
+  .nav-block::before {
+    content: none;
+  }
+
+  .nav-wrapper {
+    padding-top: 75px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .main-nav__list {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .main-nav__item {
+    padding: 15px 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .main-nav__item a {
+    font-weight: 300;
+  }
+
+  .main-logo__link {
+    display: none;
+  }
+
+  .open-mobile-menu,
+  .close-mobile-menu {
+    display: inline;
+  }
+
+  .open-mobile-menu {
+    padding: 25px;
+    display: inline-block;
+    background-color: transparent;
+  }
+
+  .close-mobile-menu {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+
+  .user-nav__list {
+    text-align: center;
+  }
+
+  .user-nav__item {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .header-block__wrapper::after {
+    background-size: contain;
+    left: 0;
+    top: 35%;
+    z-index: -1;
+  }
+
+  h1 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  header h3 {
+    font-size: 1.125rem;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  header p {
+    display: none;
+  }
+
+  .timer-block {
+    margin-top: 30px;
+    margin-bottom: 77%;
+    width: 100%;
+  }
+
+  .timer-block .eTimer {
+    text-align: center;
+  }
+
+  .timer-block h3 {
+    text-align: center;
+  }
+
+  .timer-block .eTimer .etUnit .etNumber {
+    font-size: 30px;
+    padding: 0;
+    width: 40px;
+  }
+
+  .social__list {
+    text-align: center;
+  }
+
+  .social__link {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  .about-project {
+    padding-top: 39px;
+    padding-bottom: 0;
+  }
+
+  .about-project h2 {
+    padding-left: 30px;
+    margin-bottom: 71%;
+  }
+
+  .about-project p {
+    padding: 0 25px;
+  }
+
+  .about-project::before {
+    top: 0;
+    left: 0;
+  }
+
+  .about-project::after {
+    left: 0;
+    top: 2%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-project ul {
+    padding: 0px 20px 0 30px;
+    margin-top: 35px;
+  }
+
+  .about-project li:first-child {
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+
+  .about-project li {
+    margin-bottom: 0;
+    padding: 0 0 0 47px;
+  }
+
+  .about-project li::before {
+    left: 0 !important;
+    top: 0 !important;
+  }
+
+  .text__layout {
+    padding: 20px;
+    margin: 0 34px;
+    text-align: left;
+  }
+
+  .insurance-project {
+    padding-top: 40px;
+  }
+
+  .insurance-project h2 {
+    padding: 0 35px;
+    margin-bottom: 74%;
+  }
+
+  .insurance-project::before {
+    right: 0;
+    top: 18%;
+  }
+
+  .insurance-project::after {
+    top: 26%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .insurance-project p {
+    padding: 0 40px;
+  }
+
+  .burse-project {
+    padding: 0 32px 0;
+  }
+
+  .burse-project::after {
+    top: 9%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .burse-project h2 {
+    margin-bottom: 88%;
+  }
+
+  .burse-project p {
+    margin-bottom: 10px;
+  }
+
+  .burse-project .text__layout {
+    padding: 15px;
+    margin: 0;
+    line-height: 1.1rem;
+  }
+
+  .option-project {
+    padding: 48px 32px 63px;
+  }
+
+  .option-project::before {
+    right: 0;
+  }
+
+  .option-project::after {
+    width: 100%;
+    height: 100%;
+    top: 24%;
+    right: 0;
+  }
+
+  .option-project h2 {
+    margin-bottom: 79%;
+  }
+
+  .why-now {
+    padding-top: 20px;
+  }
+
+  .why-now li {
+    width: 100%;
+    border: none !important;
+  }
+
+  .why-now li p {
+    padding: 12px 45px;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .market-size {
+    padding: 12px 32px 53px;
+  }
+
+  .market-size .container {
+    background-position: 32% 13%;
+  }
+
+  .market-size h2 {
+    margin-bottom: 83%;
+  }
+
+  .monetization {
+    padding: 14px 32px 34px;
+  }
+
+  .monetization h2 {
+    padding-bottom: 91%;
+  }
+
+  .monetization::before {
+    left: 0;
+    top: 0;
+  }
+
+  .monetization::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 74%;
+    background-position: 47% 14%;
+  }
+
+  .monetization ul {
+    margin-top: 0;
+  }
+  
+  .monetization li {
+    margin-bottom: 27px;
+  }
+
+  .monetization ul::before {
+    content: none;
+  }
+
+  .potential {
+    padding: 35px 32px 50px;
+  }
+
+  .potential h2 {
+    margin-bottom: 78%;
+  }
+
+  .potential h2,
+  .potential p {
+    width: 100%;
+  }
+
+  .potential::after {
+    background-position: 30% 11%;
+    background-size: 85%;
+  }
+
 }

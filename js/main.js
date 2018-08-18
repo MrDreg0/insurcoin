@@ -5,11 +5,20 @@ $(document).ready(function(){
     } else{
       $(".nav-wrapper").removeClass("small").addClass("large");
     }
-});
+  });
   $("#menu").on("click","a", function (event) {
     event.preventDefault();
-    var id  = $(this).attr('href'),
-      top = $(id).offset().top;
+    var id  = $(this).attr('href');
+    var top = $(id).offset().top;
+    $(".nav-block").toggleClass("menu-open");
     $('body,html').animate({scrollTop: top}, 1500);
   });
+  $(".open-mobile-menu").on("click", function(evt) {
+    evt.preventDefault();
+    $(".nav-block").toggleClass("menu-open");
+  })
+  $(".close-mobile-menu").on("click", function(evt) {
+    evt.preventDefault();
+    $(".nav-block").toggleClass("menu-open");
+  })
 });

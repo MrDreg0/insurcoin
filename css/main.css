@@ -1071,11 +1071,12 @@ footer a {
   font-size: 0.875rem;
 }
 
-
+/* --------------------------------------------------------------- */
 
 @media (max-width: 480px) {
   section {
     width: 100% !important;
+    overflow: hidden;
   }
 
   section::after {
@@ -1111,7 +1112,7 @@ footer a {
   }
   
   header section {
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 46px;
   }
 
@@ -1170,9 +1171,13 @@ footer a {
   }
 
   .open-mobile-menu {
-    padding: 25px;
+    padding: 22px;
     display: inline-block;
     background-color: transparent;
+  }
+
+  .open-mobile-menu i {
+    font-size: 2rem;
   }
 
   .close-mobile-menu {
@@ -1357,6 +1362,7 @@ footer a {
     height: 100%;
     top: 24%;
     right: 0;
+    background-size: 95%;
   }
 
   .option-project h2 {
@@ -1382,8 +1388,13 @@ footer a {
     padding: 12px 32px 53px;
   }
 
+  .market-size p {
+    width: 100%;
+  }
+
   .market-size .container {
-    background-position: 32% 13%;
+    background-position: 32% 12%;
+    background-size: 82%;
   }
 
   .market-size h2 {
@@ -1395,7 +1406,7 @@ footer a {
   }
 
   .monetization h2 {
-    padding-bottom: 91%;
+    padding-bottom: 86%;
   }
 
   .monetization::before {
@@ -1428,6 +1439,11 @@ footer a {
     padding: 35px 32px 50px;
   }
 
+  .potential .container {
+    background-size: 82%;
+    background-position: 36% 12%;
+  }
+
   .potential h2 {
     margin-bottom: 78%;
   }
@@ -1442,4 +1458,248 @@ footer a {
     background-size: 85%;
   }
 
+  .tokens-amount {
+    padding: 32px 40px;
+    font-size: 1.4375rem;
+  }
+
+  .tokens-amount span {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  
+  .distribution-tokens {
+    padding: 17px 32px 50px;
+  }
+
+  .distribution-tokens img {
+    width: 238px;
+    height: 238px;
+    display: block;
+  }
+
+  .distribution-tokens .percent-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .distribution-tokens .percent-wrapper p span {
+    position: absolute;
+    padding: 0 10px;
+    width: 100px;
+    left: 0;
+    top: 0;
+  }
+
+  .distribution-tokens .percent-wrapper p:nth-child(1),
+  .distribution-tokens .percent-wrapper p:nth-child(2),
+  .distribution-tokens .percent-wrapper p:nth-child(3),
+  .distribution-tokens .percent-wrapper p:nth-child(4) {
+    position: relative;
+    padding: 0;
+    margin: 15px 0;
+    width: 63%;
+    height: 35px;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    padding-left: 100px;
+  }
+
+  .distribution-tokens .percent-wrapper p:nth-child(1) {
+    border-right: none;
+    border-left: 6px solid #272fb3;
+  }
+
+  .distribution-details {
+    padding-top: 22px;
+  }
+
+  .distribution-details table {
+    padding-left: 8%;
+  }
+
+  .distribution-details td {
+    padding-right: 15px;
+  }
+
+  .distribution-details td:last-child {
+    width: 38%;
+  }
+
+  .distribution-details p {
+    padding: 0 32px;
+  }
+
+  .distribution-cash {
+    padding: 9px 32px 47px;
+  }
+
+  .distribution-cash img {
+    width: 238px;
+    height: 238px;
+    display: block;
+  }
+
+  .distribution-cash .percent-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .distribution-cash .percent-wrapper p span {
+    position: absolute;
+    padding: 0 10px;
+    width: 100px;
+    left: 0;
+    top: 0;
+  }
+
+  .distribution-cash .percent-wrapper p:nth-child(1),
+  .distribution-cash .percent-wrapper p:nth-child(2),
+  .distribution-cash .percent-wrapper p:nth-child(3),
+  .distribution-cash .percent-wrapper p:nth-child(4),
+  .distribution-cash .percent-wrapper p:nth-child(5) {
+    position: relative;
+    padding: 0;
+    margin: 15px 0;
+    width: 63%;
+    height: 35px;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    padding-left: 100px;
+  }
+
+  .distribution-cash .percent-wrapper p:nth-child(1) {
+    border-right: none;
+    border-left: 6px solid #272fb3;
+  }
+
+  .distribution-cash .percent-wrapper p:nth-child(2) {
+    border-right: none;
+    border-left: 6px solid #12194f;
+  }
+
+  .road-map {
+    padding: 15px 41px;
+  }
+
+  .road-map ul::before {
+    content: none;
+  }
+
+  .road-map ul {
+    padding: 24px 18px;
+    flex-direction: column;
+    border-left: 4px solid #3d7bdd;
+  }
+  
+  .road-map li {
+    width: 100%;
+    text-align: left;
+    height: auto;
+    position: relative;
+  }
+
+  .road-map li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -31px;
+    height: 24px;
+    width: 24px;
+    background-image: url("../img/road-map-dot.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  .road-map li:nth-child(4n) {
+    margin-bottom: 0;
+  }
+
+  .road-map li:last-child p {
+    margin-bottom: 0;
+  }
+
+  .road-map li span {
+    order: 1;
+  }
+
+  .road-map li p {
+    order: 2;
+  }
+
+  .team-project {
+    background-image: url("../img/pattern-section.png");
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: repeat-y;
+  }
+
+  .team-project::before,
+  .team-project::after {
+    content: none;
+  }
+
+  .team-project .team__list>li {
+    width: 100%;
+  }
+
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .container div {
+    width: 100%;
+  }
+
+  footer .sub-block {
+    order: 1;
+    margin-bottom: 50px;
+  }
+
+  footer .sub-block .btn {
+    margin: 0 auto 10px auto;
+  }
+
+  footer .sub-block p {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  footer .social-wrapper {
+    order: 2;
+    margin-bottom: 50px;
+  }
+
+  footer .footer-logo {
+    padding: 0 32px;
+    order: 3;
+    display: flex;
+    flex-direction: row;
+  }
+
+  footer .footer-logo a {
+    display: none;
+  }
+
+  footer .footer-logo h2 {
+    width: 40%;
+    margin-right: 20px;
+  }
+
+  footer .footer-logo p {
+    margin-bottom: 0;
+    margin-top: 15px;
+    width: 60%;
+    font-size: 0.625rem;
+    line-height: 0.625rem;
+  }
 }

@@ -1388,12 +1388,12 @@ footer a {
   }
 
   .market-size .container {
-    background-position: 32% 12%;
+    background-position: 32% 10%;
     background-size: 82%;
   }
 
   .market-size h2 {
-    margin-bottom: 83%;
+    margin-bottom: 90%;
   }
 
   .monetization {
@@ -1431,11 +1431,11 @@ footer a {
 
   .potential .container {
     background-size: 82%;
-    background-position: 36% 12%;
+    background-position: 36% 10%;
   }
 
   .potential h2 {
-    margin-bottom: 78%;
+    margin-bottom: 85%;
   }
 
   .potential h2,
@@ -1487,9 +1487,9 @@ footer a {
   .distribution-tokens .percent-wrapper p:nth-child(4) {
     position: relative;
     padding: 0;
-    margin: 15px 0;
-    width: 63%;
-    height: 35px;
+    margin: 15px auto;
+    width: 80%;
+    min-height: 35px;
     top: 0;
     left: 0;
     right: 0;
@@ -1553,9 +1553,9 @@ footer a {
   .distribution-cash .percent-wrapper p:nth-child(5) {
     position: relative;
     padding: 0;
-    margin: 15px 0;
-    width: 63%;
-    height: 35px;
+    margin: 15px auto;
+    width: 80%;
+    min-height: 35px;
     top: 0;
     left: 0;
     right: 0;
@@ -1691,5 +1691,28 @@ footer a {
     width: 60%;
     font-size: 0.625rem;
     line-height: 0.625rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .timer-block .eTimer .etUnit .etNumber {
+    font-size: 25px;
+    width: 30px;
+  }
+
+  .social__link {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+
+  .tokens-amount {
+    padding: 32px 10px;
+    font-size: 1rem;
+  }
+
+  .tokens-amount span {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
   }
 }

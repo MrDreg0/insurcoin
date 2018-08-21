@@ -1015,6 +1015,7 @@ header .btn-outline {
 
 .team-project img {
   margin-bottom: 12px;
+  border-radius: 50%;
 }
 
 .team-project span {

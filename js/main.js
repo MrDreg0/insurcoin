@@ -6,6 +6,10 @@ $(document).ready(function(){
       $(".nav-wrapper").removeClass("small").addClass("large");
     }
   });
+  $("#toggle-language").on("click", function (evt) {
+    evt.preventDefault();
+    $("#toggle-language__menu").toggleClass("show");
+  })
   $("#menu").on("click","a", function (event) {
     event.preventDefault();
     var id  = $(this).attr('href');

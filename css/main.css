@@ -150,17 +150,18 @@ header section::before {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   transition: all 0.5s;
 }
 
 .large {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .small {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .nav-block::before {
@@ -266,10 +267,6 @@ main::before {
   content: none;
 }
 
-header .main-logo {
-  margin-top: 14px;
-}
-
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -301,16 +298,11 @@ header .main-logo {
 .user-nav__item {
   margin-left: 16px;
   display: inline-block;
+  position: relative;
 }
 
 .user-nav__item .login {
   padding: 10px 30px;
-}
-
-.toggle-language .ru-icon {
-  width: 16px;
-  height: 16px;
-  vertical-align: top;
 }
 
 .toggle-language .arrow {
@@ -319,6 +311,36 @@ header .main-logo {
   height: 8px;
   transform: rotate(90deg);
   vertical-align: middle;
+}
+
+.toggle-language__menu {
+  display: none;
+  position: absolute;
+  top: 39px;
+  right: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.53);
+}
+
+.toggle-language__menu li:first-child {
+  border-bottom: 1px solid #ffffff;
+}
+
+.toggle-language__menu a {
+  padding: 10px 25px;
+  display: inline-block;
+  color: #ffffff;
+}
+
+.toggle-language__menu a:hover,
+.toggle-language__menu a:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.show {
+  display: block;
 }
 
 header section {
@@ -1681,13 +1703,12 @@ footer a {
     display: none;
   }
 
-  footer .footer-logo h2 {
+  footer .footer-logo img {
     margin-right: 20px;
   }
 
   footer .footer-logo p {
-    margin-bottom: 0;
-    margin-top: 15px;
+    margin: auto 0;
     width: 60%;
     font-size: 0.625rem;
     line-height: 0.625rem;

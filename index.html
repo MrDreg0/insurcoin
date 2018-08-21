@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Insurcoin</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#266fc8">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#266fc8">
+  <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -15,7 +24,7 @@
       <div class="container">
         <div class="nav-wrapper large">
           <a href="#" class="close-mobile-menu"><i class="fas fa-times"></i></a>
-          <a href="#" class="main-logo__link"><img src="img/logo.png" class="main-logo" alt="Логотип сайта" width="108" height="14"></a>
+          <a href="#" class="main-logo__link"><img src="img/logo.png" class="main-logo" alt="Логотип сайта" width="100" height="50"></a>
           <nav class="main-nav" id="menu">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -37,15 +46,7 @@
               <button class="btn login">Войти</button>
             </li>
             <li class="user-nav__item">
-              <button class="btn toggle-language">
-                <svg class="ru-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 512 512">
-                  <circle style="fill:#F0F0F0;" cx="256" cy="256" r="256"/>
-                  <path style="fill:#0052B4;" d="M496.077,345.043C506.368,317.31,512,287.314,512,256s-5.632-61.31-15.923-89.043H15.923
-                  C5.633,194.69,0,224.686,0,256s5.633,61.31,15.923,89.043L256,367.304L496.077,345.043z"/>
-                  <path style="fill:#D80027;" d="M256,512c110.071,0,203.906-69.472,240.077-166.957H15.923C52.094,442.528,145.929,512,256,512z"/>
-                  <g>
-                </svg>
+              <button class="btn toggle-language" id="toggle-language">
                 RU
                 <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 41.999 41.999">
@@ -55,6 +56,10 @@
                   <g>
                 </svg>
               </button>
+              <ul class="toggle-language__menu" id="toggle-language__menu">
+                <li><a href="index.html">RU</a></li>
+                <li><a href="index.en.html">EN</a></li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -463,7 +468,7 @@
   <footer>
     <div class="container">
       <div class="footer-logo">
-        <h2>Insurcoin</h2>
+        <img src="img/logo.png" class="main-logo" alt="Логотип сайта" width="100" height="50">
         <p>Первая биржа опционов с возможностью<br/>страхования депозитов от падения</p>
         <a href="#">Вернуться в начало страницы</a>
       </div>

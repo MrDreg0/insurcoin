@@ -1603,6 +1603,10 @@ footer a {
     content: none;
   }
 
+  .road-map::after {
+    height: auto;
+  }
+
   .road-map ul {
     padding: 24px 18px;
     flex-direction: column;

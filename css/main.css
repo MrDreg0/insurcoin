@@ -930,6 +930,10 @@ header .btn-outline {
   transform: scale(1);
 }
 
+.road-map::after {
+  height: auto;
+}
+
 .road-map li {
   width: 24%;
   height: 138px;
@@ -1601,10 +1605,6 @@ footer a {
 
   .road-map ul::before {
     content: none;
-  }
-
-  .road-map::after {
-    height: auto;
   }
 
   .road-map ul {

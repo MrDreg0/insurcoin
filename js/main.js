@@ -10,7 +10,7 @@ $(document).ready(function(){
     evt.preventDefault();
     $("#toggle-language__menu").toggleClass("show");
   })
-  $("#menu").on("click","a", function (event) {
+  $("#menu").on("click",".move-link", function (event) {
     event.preventDefault();
     var id  = $(this).attr('href');
     var top = $(id).offset().top;

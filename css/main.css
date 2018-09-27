@@ -296,13 +296,17 @@ main::before {
 }
 
 .user-nav__item {
-  margin-left: 16px;
+  margin: 0 30px;
   display: inline-block;
   position: relative;
 }
 
 .user-nav__item .login {
   padding: 10px 30px;
+}
+
+.toggle-language {
+  width: 150px
 }
 
 .toggle-language .arrow {
@@ -317,18 +321,19 @@ main::before {
   display: none;
   position: absolute;
   top: 39px;
-  right: 6px;
+  right: 9px;
   list-style: none;
   margin: 0;
   padding: 0;
   background-color: rgba(255, 255, 255, 0.53);
 }
 
-.toggle-language__menu li:first-child {
+.toggle-language__menu li:not(:last-child) {
   border-bottom: 1px solid #ffffff;
 }
 
 .toggle-language__menu a {
+  width: 100%;
   padding: 10px 25px;
   display: inline-block;
   color: #ffffff;
@@ -351,7 +356,7 @@ header section {
 }
 
 h1 {
-  margin-top: 150px;
+  margin-top: 90px;
   margin-bottom: 0;
   font-size: 3.75rem;
   line-height: 3.75rem;
@@ -407,16 +412,17 @@ header .btn-outline {
   background-image: url('../img/social-icons/twitter.png');
 }
 
-.social__link.youtube {
-  background-image: url('../img/social-icons/youtube.png');
+.social__link.medium {
+  background-image: url('../img/social-icons/medium.svg');
+  background-size: 75%;
 }
 
 .social__link.telegram {
   background-image: url('../img/social-icons/telegram.png');
 }
 
-.social__link.vk {
-  background-image: url('../img/social-icons/vk.png');
+.social__link.bt {
+  background-image: url('../img/social-icons/bt.svg');
 }
 
 .social__link.linked-in {
@@ -497,6 +503,10 @@ header .btn-outline {
   position: relative;
 }
 
+.chinese .about-project li {
+  padding: 5px 90px 0 70px;
+}
+
 .about-project li:nth-child(1) {
   padding-right: 170px;
   margin-bottom: 29px;
@@ -556,6 +566,10 @@ header .btn-outline {
   padding: 39px 0 50px 13px;
 }
 
+.chinese .burse-project {
+  padding-top: 70px;
+}
+
 .burse-project::before {
   left: -117%;
   top: -93px;
@@ -583,6 +597,10 @@ header .btn-outline {
 .option-project {
   padding-top: 13px;
   padding-bottom: 121px;
+}
+
+.chinese .option-project {
+  padding-top: 70px;
 }
 
 .option-project::before {
@@ -633,9 +651,14 @@ header .btn-outline {
 }
 
 .market-size .container {
-  background-image: url('../img/graph.png');
-  background-position: right 0;
+  background-image: url('../img/1111.png');
+  background-position: right center;
   background-repeat: no-repeat;
+  background-size: 24%;
+}
+
+.chinese .market-size .container {
+  padding: 10px 0;
 }
 
 .market-size h2 {
@@ -693,6 +716,30 @@ header .btn-outline {
   margin-bottom: 46px;
 }
 
+.vietnamese .monetization li {
+  margin-bottom: 24px;
+}
+
+.korean .monetization li {
+  margin-bottom: 86px;
+}
+
+.chinese .monetization li {
+  margin-bottom: 102px;
+}
+
+.spanish .monetization li {
+  margin-bottom: 24px;
+}
+
+.indonesian .monetization li {
+  margin-bottom: 24px;
+}
+
+.french .monetization li {
+  margin-bottom: 24px;
+}
+
 .monetization ul h3 {
   margin-bottom: 0;
 }
@@ -714,8 +761,12 @@ header .btn-outline {
 
 .potential .container {
   background-image: url('../img/graph.png');
-  background-position: right 0;
+  background-position: right center;
   background-repeat: no-repeat;
+}
+
+.chinese .potential .container {
+  padding: 10px 0;
 }
 
 .tokens-amount {
@@ -935,7 +986,7 @@ header .btn-outline {
 }
 
 .road-map li {
-  width: 24%;
+  width: 23%;
   height: 138px;
   display: flex;
   flex-direction: column;
@@ -943,8 +994,20 @@ header .btn-outline {
   text-align: center;
 }
 
+.spanish .road-map li {
+  padding: 0 10px;
+}
+
+.indonesian .road-map li {
+  padding: 0 20px;
+}
+
+.french .road-map li {
+  padding: 0 10px;
+}
+
 .road-map li:nth-child(4n) {
-  margin-bottom: 98px;
+  margin-bottom: 96px;
 }
 
 .road-map p {
@@ -956,7 +1019,7 @@ header .btn-outline {
 }
 
 .team-project {
-  padding-top: 73px;
+  padding-top: 25px;
   padding-bottom: 145px;
   width: 100%;
 }
@@ -1071,7 +1134,7 @@ footer a {
 }
 
 .footer-logo p {
-  margin-bottom: 32px;
+  margin-bottom: 12px;
   font-size: 0.75rem;
 }
 
@@ -1089,6 +1152,10 @@ footer a {
   text-align: center;
 }
 
+.vietnamese .social-wrapper {
+  padding: 0 50px;
+}
+
 .social-wrapper ul {
   margin-bottom: 20px;
 }
@@ -1101,6 +1168,18 @@ footer a {
   height: 40px;
   display: block;
   font-size: 0.875rem;
+}
+
+.vietnamese .sub-block .btn {
+  padding: 12px 0;
+}
+
+.spanish .sub-block .btn {
+  padding: 12px 0;
+}
+
+.french .sub-block .btn {
+  padding: 12px 0;
 }
 
 /* --------------------------------------------------------------- */
@@ -1621,6 +1700,10 @@ footer a {
     position: relative;
   }
 
+  .road-map li.none {
+    display: none;
+  }
+
   .road-map li::before {
     content: '';
     position: absolute;
@@ -1721,6 +1804,11 @@ footer a {
 }
 
 @media (max-width: 420px) {
+  h1 {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+  }
+
   .timer-block .eTimer .etUnit .etNumber {
     font-size: 25px;
     width: 30px;

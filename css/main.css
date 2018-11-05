@@ -1399,7 +1399,7 @@ footer a {
   padding: 12px 0;
 }
 
-/* --------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
 @media (max-width: 480px) {
   section {
@@ -1582,6 +1582,11 @@ footer a {
     left: -25px;
   }
 
+  .ico-graph span {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+
   .social__list {
     text-align: center;
   }
@@ -1729,6 +1734,10 @@ footer a {
     background-size: 82%;
   }
 
+  .japanese .market-size .container {
+    background-size: 82%;
+  }
+
   .market-size h2 {
     margin-bottom: 90%;
   }
@@ -1769,6 +1778,10 @@ footer a {
   .potential .container {
     background-size: 82%;
     background-position: 36% 10%;
+  }
+
+  .japanese .potential .container {
+    background-size: 82%;
   }
 
   .potential h2 {

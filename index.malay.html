@@ -16,7 +16,7 @@
   <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css?ver1.5">
+  <link rel="stylesheet" href="css/main.css?ver1.9">
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126186358-1"></script>
 <script>
@@ -56,7 +56,7 @@
 <noscript><div><img src="https://mc.yandex.ru/watch/50426290" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 </head>
-<body>
+<body class="malay">
   <header>
     <a href="#" class="open-mobile-menu"><i class="fas fa-bars"></i></a>
     <div class="nav-block">
@@ -76,19 +76,20 @@
                 <a href="#team-project" class="move-link">Pasukan</a>
               </li>
 			        <li class="main-nav__item">
-                <a href="./doc/Whitepapereng.pdf">WP</a>
+                <a href="./doc/Whitepapereng.pdf">Kertas Putih</a>
               </li>
             </ul>
           </nav>
           <ul class="user-nav__list">
-		  <li class="user-nav__item">
-		  <button class="btn login">
-              <a href="https://sale.ccin.io/">Sign In</a>
-			  </button>
+            <li class="user-nav__item">
+              <a href="https://sale.ccin.io/app/register" class="btn register">Register</a>
+            </li>
+            <li class="user-nav__item">
+              <a href="https://sale.ccin.io/" class="btn login">Sign In</a>
             </li>
             <li class="user-nav__item">
               <button class="btn toggle-language" id="toggle-language">
-                English
+                Malay
                 <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 41.999 41.999">
                   <path d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40
@@ -106,8 +107,8 @@
                 <li><a href="index.sp.html">Spanish</a></li>
                 <li><a href="index.indo.html">Indonesian</a></li>
                 <li><a href="index.fr.html">French</a></li>
-				<li><a href="index.malay.html">Malay</a></li>
-                <li><a href="index.japanese.html">Japanese</a></li>
+				        <li><a href="index.japanese.html">Japanese</a></li>
+                <li><a href="index.malay.html">Malay</a></li>
               </ul>
             </li>
           </ul>
@@ -116,22 +117,12 @@
     </div>
     <div class="container header-block__wrapper" id="top-site">
       <section>
-        <h1>Cryptocoin insurance</h1>
+        <h1>INSURAN CRYPTOCOIN</h1>
         <h3>Pertukaran pilihan pertama dengan menginsurankan deposit terhadap kejatuhan nilai</h3>
         <p>Pasaran yang besar dan bebas sepenuhnya belum mempunyai penyelesaian teknikal</p>
         <p>Kami menyediakan kecekapan pada anda sendiri bagi abad yang akan datang</p>
         <div class="timer-block">
           <h3>Memulakan Jualan ICO</h3>
-          <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-          <script src="https://e-timer.ru/js/etimer.js"></script>
-          <script type="text/javascript">
-            jQuery(document).ready(function() {
-              jQuery(".eTimer").eTimer({
-                etType: 0, etDate: "01.11.2018.12.0", etTitleText: "", etTitleSize: 20, etShowSign: 2, etSep: " ", etFontFamily: "ProximaNova", etTextColor: "white", etPaddingTB: 15, etPaddingLR: 15, etLastUnit: 4, etNumberFontFamily: "ProximaNova", etNumberSize: 40, etNumberColor: "#307ed3", etNumberPaddingTB: 0, etNumberPaddingLR: 8, etNumberBackground: "white", etNumberBorderSize: 0, etNumberBorderRadius: 6, etNumberBorderColor: "white"
-              });
-            });
-          </script>
-          <div class="eTimer"></div>
         </div>
         <div class="ccin-graph">
           <table>
@@ -145,7 +136,7 @@
             </tr>
             <tr class="graph-body">
               <td colspan="6">
-                <span class="graph-fill" ></span>
+                <span class="graph-fill" data-graph-period="1"></span>
               </td>
             </tr>
             <tr class="graph-date">
@@ -175,6 +166,42 @@
             <a href="https://bitcointalk.org/index.php?topic=4948618" class="social__link bt">bt</a>
           </li>
         </ul>
+      </section>
+      <section class="ico-block">
+        <div class="ico-graph">
+          <div class="cost-wrapper">
+            <div class="cost-current">
+              <p>Currently raised:</p>
+              <span>400 655 USD</span>
+            </div>
+            <div class="cost-target">
+              <p>Target:</p>
+              <span>10 000 000 USD</span>
+            </div>
+          </div>
+          <div class="cost-graph">
+            <span class="cost-fill" data-cost-price="400655"></span>
+          </div>
+          <p class="current-price">Current-price: <span>$0.04</span></p>
+        </div>
+        <div class="ico-info">
+          <div class="in-button">
+            <a href="/doc/faq.pdf" class="instruction-button">Instruction</a>
+          </div>
+          <div class="buy-prt-h">
+            <a class="button-main" target="_blank" href="https://sale.ccin.io/cabinet/home">Buy CCIN</a>
+          </div>
+          <div class="we-accept">
+            We accept
+            <img src="img\eth-small.svg" class="eth-img" alt="etherium">
+            <img src="img\btc-small.svg" class="eth-img2" alt="bitcoin">
+          </div>
+          <div class="we-accept-mobile">
+            We accept
+            <img src="img\eth-small.svg" class="eth-img" alt="etherium">
+            <img src="img\btc-small.svg" class="eth-img2" alt="bitcoin">
+          </div>
+        </div>
       </section>
     </div>
   </header>
@@ -206,77 +233,77 @@
         <img class="mobile-section__img" width="409" height="308" src="img/burse-project-bg.png" alt="Burse CRYPTOCOIN INSURANCE">
         <p><span class="text__semibold">Masalah:</span> Tiada pertukaran mata wang kripto khusus di mana anda boleh membeli / menjual pilihan. Ketakutan utama untuk membuat pertukaran itu juga menyebabkan peningkatan volatiliti. Nampaknya semua pedagang tahu berkaitan dengan pilihan saham, minyak atau gandum bahawa risiko itu sangat besar.</p>
         <p><span class="text__semibold">Penyelesaian:</span> Ketakutan utama pilihan dalam pasaran mata wang kripto adalah peningkatan turun naik nilai. Tetapi adakah itu benar? </p>
-        <p class="text__layout"> Let us consider an example with the habitual stock market. For example, a client sold an option for a share of the ZZZ Company. Today is Saturday, and the market is closed. There is unexpected good news and the stock grows 2-10 times at the opening of the market on Monday. In its turn, the option seller suffers huge losses.</p>
-        <p>The advantage of the cryptocurrency market unlike the stock or commodity one is that it operates 24 hours a day. And for the whole period of its existence (about 10 years), there has never been any news that would quickly shift the price of Bitcoin or Ethereum by at least 30-50%. In fact, if it goes only about blue chips (coins), the cryptocurrency market is much safer for option sellers than other markets that we got accustomed to.</p>
+        <p class="text__layout"> Mari kita pertimbangkan contoh pasaran saham biasa. Sebagai contoh, pelanggan menjual opsyen untuk saham daripada Syarikat ZZZ. Hari ini hari Sabtu, dan pasaran ditutup. Terdapat berita gembira yang tidak dijangka dan saham meningkat 2-10 kali semasa pembukaan pasaran pada hari Isnin. Sebaliknya, penjual pilihan mengalami kerugian besar.</p>
+        <p>Keuntungan dari pasaran mata wang kripto, tidak seperti saham atau komoditi, ia beroperasi 24 jam sehari. Dan untuk semua tempoh kewujudan (sekitar 10 tahun), tidak pernah terdapat berita bahawa harga Bitcoin atau Ethereum akan bergerak cepat sekurang-kurangnya 30-50%. Malah, jika hanya pada cip biru, pasaran mata wang kripto adalah lebih selamat untuk penjual pilihan daripada pasaran lain yang biasanya kita gunakan. </p>
       </section>
       <section class="option-project">
-        <h2>Options enable short sales</h2>
+        <h2>Pilihan membolehkan jualan pendek</h2>
         <img class="mobile-section__img" width="368" height="268" src="img/option-project-bg.png" alt="Options enable short sales">
-        <p><span class="text__semibold">Problem:</span> There is still no short selling opportunity in the cryptocurrency market. Nobody can sell a cryptocurrency that is physically absent on the account within a short period of time. This reduces the speculators’ ability to smooth price fluctuations in other markets. In its turn it causes the volatility increase and consequences enumerated in cl. 1 and 2 above.</p>
-        <p><span class="text__semibold">Solution:</span> Without having physical Bitcoin or Ethereum, it is possible to get an option for their falling, and actually carry out uncovered sale. This opportunity brings to the market a lot of new traders, investors and speculators, as well as hedge funds who put money not only on the growth but also on the fall of markets.</p>
+        <p><span class="text__semibold">Masalah:</span> Masih tiada peluang jualan pendek dalam pasaran mata wang kripto. Tiada siapa yang boleh menjual mata wang kripto yang tidak secara fizikal dalam akaun dalaman masa yang singkat. Ini mengurangkan keupayaan spekulator untuk mempercepatkan turun naik harga di pasaran lain. Sebaliknya ia menyebabkan peningkatan turun naik dan akibat disebut dalam cl. 1 dan 2 di atas. </p>
+        <p><span class="text__semibold">Penyelesaian:</span> Penyelesaian: Tanpa Bitcoin atau Ethereum fizikal, adalah mungkin mendapatkan pilihan untuk jatuh, dan sebenarnya menjalankan penjualan yang tidak dijumpai. Peluang ini membawa kepada banyak pedagang baru, pelabur dan spekulator, serta dana lindung nilai yang meletakkan wang bukan sahaja pada pertumbuhan tetapi  juga pada kejatuhan pasaran. </p>
       </section>
     </div>
     <section class="why-now bg__white">
       <div class="container">
-        <h2>Why now?</h2>
+        <h2>Kenapa sekarang?</h2>
         <ul>
           <li>
             <img src="img/why-now-icons/1.png" width="174" height="150" alt="Market">
-            <p>There are around one thousand exchanges and no option exchange</p>
+            <p>Terdapat kira-kira seribu pertukaran dan tiada pilihan pertukaran</p>
           </li>
           <li>
             <img src="img/why-now-icons/2.png" width="155" height="155" alt="Hedge fund">
-            <p>The rapid growth of hedge funds interest to the cryptomarket is not satisfied because of the lack of options and the possibility of short sales</p>
+            <p>Pertumbuhan pesat dalam pengurus dana yang tidak berpuas hati pasaran kripto kerana kekurangan pilihan dan kemungkinan jualan yang pendek </p>
           </li>
           <li>
             <img src="img/why-now-icons/3.png" width="157" height="156" alt="Team">
-            <p>We have assembled a team of professionals who know everything about the options market and are ready to make on it not revolutionary but innovative changes</p>
+            <p>Kami telah mengumpulkan satu pasukan profesional yang memahami segala-galanya mengenai pasaran pilihan dan bersedia untuk membuat perubahan berevolusi dan juga inovatif </p>
           </li>
         </ul>
       </div>
     </section>
     <section class="market-size bg__white">
       <div class="container">
-        <h2>Market size</h2>
-        <p>The capitalization of the cryptocurrency market amounts to hundreds of billions of dollars. The daily trading volume is at the level of $10-20 billion.</p>
-        <p>The size of the options market for commodities and shares differs from country to country, and is 1-5% of the amount of the basic asset market. Thus, we can calculate the potential volume of the options market for basic cryptocurrencies in the amount of $50-250 million per day.</p>
-        <p>However, the calculations do not take into account that options actually provide the opportunity for short sales that today cannot be carried out on cryptocurrency exchanges. This will contribute to the additional increase in the sellers’ demand for the instrument.</p>
+        <h2>Saiz pasaran</h2>
+        <p>Permodalan pasaran mata wang kripto berjumlah beratus-ratus bilion dolar. Jumlah dagangan harian pada tahap $ 10-20 bilion.</p>
+        <p>Bahagian pasaran pilihan untuk komoditi dan stok adalah berbeza daripada satu negara yang lain, dan antara 1-5% daripada bilangan pasaran aset asas. Oleh itu, kita boleh kirakan potensi jumlah pasaran pilihan untuk asas mata wang kripto pada jumlah $ 50-250 juta sehari.</p>
+        <p>Bagaimanapun, pengiraan tidak bermakna pilihan itu benar-benar memberi peluang untuk jualan pendek kini tidak dapat dilakukan dalam pertukaran mata wang kripto Ini akan menyumbang kepada peningkatan permintaan penjual untuk instrumen.</p>
       </div>
     </section>
     <div class="container">
       <section class="monetization">
-          <h2>Monetization</h2>
+          <h2>Pengewangan</h2>
           <img class="mobile-section__img" width="330" height="316" src="img/monetization-bg.png" alt="Monetization">
-          <p>CRYPTOCOIN INSURANCE has two main sources of income</p>
+          <p>INSURAN CRYPTOCOIN mempunyai dua sumber utama pendapatan</p>
           <ul>
             <li>
-              <h3>Option Exchange</h3>
-              <p>The profit is generated as a trade commission from each operation on purchasing or selling options. It is 0.5% per transaction or 1% per circle for each of the transaction parties.</p>
-              <p>Taking into account the volatility of options and huge opportunities for profit, this commission is not significant for market participants. However, it allows the exchange to earn a high income as compared to usual cryptocurrency exchanges due to the total lack of competition. In case of competitors in the future, the amount of the exchange commission can be proportionally reduced.</p>
+              <h3>Pilihan Pertukaran</h3>
+              <p>Keuntungan yang diperolehi datang dari komisen untuk setiap operasi pada pilihan pembelian atau jualan. Jumlahnya adalah 0.5% setiap transaksi atau 1% setiap pusingan bagi setiap bahagian transaksi.</p>
+              <p>Mengambil kira kemudahubahan pilihan dan peluang besar untuk mendapatkan keuntungan, Suruhanjaya ini tidak begitu penting bagi peserta pasaran. Walau bagaimanapun, ini adalah mungkin pertukaran untuk mendapatkan pendapatan yang tinggi berbanding pertukaran mata wang kripto biasanya disebabkan oleh kekurangan persaingan. Walaupun dalam kes pesaing pada masa depan, jumlah komisen pertukaran boleh dikurangkan secara proporsional.</p>
             </li>
             <li>
-              <h3>Insurance Company</h3>
-              <p>The income is generated by selling cryptocurrency growth/decline insurances.</p>
+              <h3>Syarikat insuran</h3>
+              <p>Pendapatan dihasilkan dengan cara menjual isuran kenaikan / penurunan matawang kripto</p>
             </li>
           </ul>
       </section>
     </div>
     <section class="potential bg__white">
       <div class="container">
-        <h2>CCIN Token Growth Potential</h2>
-        <p>The CRYPTOCOIN INSURANCE Company has developed a simple and understandable model for the increase in the CCIN token value. 30% of each commission obtained by the option exchange will be directed to the liquidity fund. Within the next month CRYPTOCOIN INSURANCE sends these funds to purchase CCIN tokens from the market and burns them.</p>
-        <p>This business model is adopted solely in the interests of our investors. The promise to buy tokens from the future profits cannot be transparent. Moreover, the exchange or the platform may never have the profit physically. In case of CRYPTOCOIN INSURANCE tokens, investors know exactly that each option purchase/sell transaction generates the cash flow used to buy tokens.</p>
-        <p>This allows constantly shifting the market balance and increase the demand for CCIN tokens.</p>
-        <p>If the turnover is $50 million per day, the commission for both sides of the transaction will be $500,000 or $15 million a month. 30% of this amount or $5 million are sent monthly to buy CCIN tokens from the market.</p>
+        <h2>Potensi Pertumbuhan Token CCIN</h2>
+        <p>Syarikat INSURAN CRYPTOCOIN telah membangunkan satu model mudah dan senang difahami untuk meningkatkan nilai tokenCCIN. 30% daripada setiap komisen yang diperolehi oleh pertukaran mata wang akan diagihkan kepada dana kecairan. Bulan berikutnya CRYPTOCOIN INSURAN kemudian menghantar dana ini untuk membeli token CCIN dari pasaran dan membakarnya.</p>
+        <p>Model perniagaan ini hanya digunakan untuk kepentingan pelabur kami. Janji untuk membeli token dari keuntungan masa depan tidak boleh dilakukan secara terbuka. Di samping itu, pertukaran atau platform tidak boleh memberi manfaat secara fizikal. Dalam kes token CRYPTOCOIN INSURAN, pelabur tahu dengan tepat bahawa setiap transaksi pilihan pembelian / jualan menjana aliran tunai yang digunakan untuk membeli token.</p>
+        <p>Ini akan membolehkan pergerakan yang seimbang dalam pasaran dan peningkatan permintaan token CCIN.</p>
+        <p>Jika perolehan mencapai $ 50 juta sehari, komisen untuk kedua-dua bahagian transaksi akan berjumlah $ 500,000 atau $ 15 juta sebulan. 30% daripada jumlah ini atau $ 5 juta sebulan dihantar untuk membeli token CCIN dari pasaran.</p>
       </div>
     </section>
     <p class="tokens-amount">
       <span>100 000 000</span>
-      CCIN tokens will be issued
+      CCIN Token akan dikeluarkan 
     </p>
     <section class="distribution-tokens bg__white">
       <div class="container">
-        <h2>Token allocation</h2>
+        <h2>Peruntukan Token</h2>
         <img src="img/distribution-tokens.png" width="364" height="364" alt="Token allocation">
         <div class="percent-wrapper">
           <p>
@@ -285,15 +312,15 @@
           </p>
           <p>
             <span>18%</span>
-            Reserved for the project team
+            Disimpan untuk pasukan projek 
           </p>
           <p>
             <span>5%</span>
-            Mentors
+            Mentor
           </p>
           <p>
             <span>2%</span>
-            Bounty program
+            Program Bounty
           </p>
         </div>
       </div>
@@ -302,83 +329,83 @@
       <div class="container">
         <table>
           <tr>
-            <td>Price of tokens</td>
-            <td>1,500 CCIN tokens = 1 ETH</td>
+            <td>Harga Token</td>
+            <td>1,500 token CCIN = 1 ETH</td>
           </tr>
           <tr>
-            <td>Date of ICO</td>
-            <td>November 1, 2018 – December 27, 2018</td>
+            <td>Tarikh ICO</td>
+            <td>1 November 2018 - 27 Disember 2018</td>
           </tr>
           <tr>
-            <td>Minimum collection amount</td>
-            <td>$0.5 M</td>
+            <td>Jumlah kutipan minimum</td>
+            <td>$0.5 Juta</td>
           </tr>
           <tr>
-            <td>ICO main target</td>
-            <td>$5 M</td>
+            <td>Sasaran utama ICO</td>
+            <td>$5 Juta</td>
           </tr>
           <tr>
-            <td>Maximum collection amount</td>
-            <td>$10 M</td>
+            <td>Jumlah kutipan maksimum</td>
+            <td>$10 Juta</td>
           </tr>
         </table>
-        <p>*All tokens that are not purchased when placed are destroyed.<br/>CCIN token is purchased by using Bitcoins or Ethereum.</p>
+        <p>*Semua token yang tidak terjual akan dimusnahkan.<br/>Token CCIN boleh dibeli dengan menggunakan Bitcoin atau Ethereum.</p>
       </div>
     </div>
     <section class="distribution-cash bg__white">
       <div class="container">
-        <h2>Allocation of the collected funds</h2>
+        <h2>Peruntukan dana yang dikutip</h2>
         <img src="img/distribution-cash.png" width="358" height="358" alt="Allocation of the collected funds">
         <div class="percent-wrapper">
           <p>
             <span>50%</span>
-            Development and launch<br/> of the option
+            Pembangunan dan pelancaran pilihan
           </p>
           <p>
             <span>25%</span>
-            Reserve fund
+            Dana rizab
           </p>
           <p>
             <span>15%</span>
-            Marketing
+            Pemasaran
           </p>
           <p>
             <span>5%</span>
-            Legal services
+            Perkhidmatan perundangan
           </p>
           <p>
             <span>5%</span>
-            Operating expenses
+            Perbelanjaan operasi
           </p>
         </div>
       </div>
     </section>
     <div class="container">
       <section class="road-map" id="road-map">
-        <h2>Roadmap</h2>
+        <h2>Peta Perjalanan</h2>
         <ul>
           <li>
-            <p>Creating the concept of insuring movements of the cryptocurrency market and the CRYPTOCOIN INSURANCE option exchange</p>
+            <p>Membuat konsep insuran untuk pergerakan mata wang kripto dan pasaran pertukaran Pilihan INSURAN CRYPTOCOIN </p>
             <span>February 2018</span>
           </li>
           <li>
-            <p>Forming the project team</p>
+            <p>Membentuk pasukan projek</p>
             <span>March-April 2018</span>
           </li>
           <li>
-            <p>Market research, defining competitive advantages</p>
+            <p>Penyelidikan pasaran, menentukan kelebihan daya saing</p>
             <span>May 2018</span>
           </li>
           <li>
-            <p>Starting to prepare for ICO</p>
+            <p>Mempersiapkan ICO</p>
             <span>June 2018</span>
           </li>
           <li>
-            <p>Launch of the option exchange with 5 cryptocurrencies</p>
+            <p>Pelancaran pertukaran pilihan dengan 5 mata wang kripto</p>
             <span>February 2019</span>
           </li>
           <li>
-            <p>Listing CCIN tokens and listing on cryptocurrency exchanges</p>
+            <p>Menyenaraikan token CCIN dan penyenaraian di bursa mata wang kripto</p>
             <span>January 2019</span>
           </li>
           <li>
@@ -386,23 +413,23 @@
             <span>November-December 2018</span>
           </li>
           <li>
-            <p>Advertising campaign</p>
+            <p>Kempen pengiklanan</p>
             <span>August-October 2018</span>
           </li>
           <li>
-            <p>Beginning of selling insurance<br/> for the market growth/fall</p>
+            <p>Permulaan penjualan insuran bagi kenaikan / kejatuhan pasaran</p>
             <span>March 2019</span>
           </li>
           <li>
-            <p>First redemption of tokens from the market and burning them</p>
+            <p>Penebusan pertama token dari pasaran dan membakarnya</p>
             <span>April 2019</span>
           </li>
           <li>
-            <p>Adding 3 new cryptocurrencies</p>
+            <p>Penambahan 3 mata wang kripto baru</p>
             <span>May 2019</span>
           </li>
           <li>
-            <p>Daily turnover of 10 million dollars</p>
+            <p>Perolehan harian sebanyak 10 juta USD</p>
             <span>July 2019</span>
           </li>
           <li class="none">
@@ -414,11 +441,11 @@
             <span></span>
           </li>	  
           <li>
-            <p>Daily turnover in the amount of $50 million</p>
+            <p>Perolehan harian 50 juta USD</p>
             <span>December 2019</span>
           </li>
 		      <li>
-            <p>Adding 2 cryptocurrencies (10 in total) to the exchange</p>
+            <p>Menambah 2 mata wang kripto (10 dalam jumlah) ke bursa</p>
             <span>September 2019</span>
           </li>
         </ul>
@@ -535,7 +562,7 @@
   
     <div class="container">
       <section class="team-project" id="team-project">
-        <h2>Team project</h2>
+        <h2>Projek Pasukan</h2>
         <ul class="team__list">
           <li>
             <img src="img/team-project/denis.jpg" width="180" height="180" alt="">
@@ -589,29 +616,21 @@
             <span>Anton Shumikhin</span>
             <p>Front-end developer</p>
             <ul class="social__list">
-              <li class="social__item">
-                
-              </li>
+              <li class="social__item"></li>
             </ul>
           <li>
             <img src="img/team-project/vlad.jpg" width="180" height="180" alt="">
             <span>Vladislav Olerckhih</span>
             <p>Back-end developed</p>
             <ul class="social__list">
-              <li class="social__item">
-              
-              </li>
+              <li class="social__item"></li>
             </ul>
           <li>
             <img src="img/team-project/dima.jpg" width="180" height="180" alt="">
             <span>Dmitry Kazakov</span>
             <p>3D/2D artist</p>
             <ul class="social__list">
-              <li class="social__item">
-              
-              </li>
-            </ul>
-          </li>
+              <li class="social__item"></li>
             </ul>
           </li>
         </ul>
@@ -627,16 +646,20 @@
             <a href="https://cryptorials.io/5-reasons-to-invest-in-cryptocoin-insurance/">5 Reasons to invest in CRYPTOCOIN INSURANCE</a>
           </li>
           <li class="news__item">
-            <img src="img/stat2.jpg" alt=""width="330" height="270">
+            <img src="img/stat11.jpg" alt=""width="330" height="270">
             <a href="https://bitcoinwarrior.net/2018/10/insure-against-wild-price-swings-with-cryptocoin-insurance/">Insure Against Wild Price Swings with Cryptocoin Insurance</a>
           </li>
           <li class="news__item">
-            <img src="img/stat2.jpg" alt=""width="330" height="270">
+            <img src="img/stat22.jpg" alt=""width="330" height="270">
             <a href="https://globalcoinreport.com/cryptocoin-insurance-ico-launching-november-1/">The Cryptocoin Insurance ICO Is Launching On November 1 </a>
           </li>
           <li class="news__item">
-            <img src="img/stat2.jpg" alt=""width="330" height="270">
+            <img src="img/stat33.jpg" alt=""width="330" height="270">
             <a href="https://insiderfinancial.com/cryptocoin-insurance-new-player-market/177055/">Cryptocoin Insurance: New Player On The Market</a>
+          </li>
+		      <li class="news__item">
+            <img src="img/stat44.jpg" alt=""width="330" height="270">
+            <a href="https://zycrypto.com/what-is-a-futures-contract-and-why-we-need-it/">What is a Futures Contract And Why We Need It</a>
           </li>
         </ul>
       </section>
@@ -691,11 +714,11 @@
     <div class="container">
       <div class="footer-logo">
         <img src="img/logo.png" class="main-logo" alt="Логотип сайта" width="90" height="50">
-        <p>The first option exchange with the possibility<br/> of insuring deposits against fall</p>
-        <a href="#">Back to the beginning of page</a>
+        <p>Pertukaran pilihan pertama dengan menginsurankan<br/> deposit terhadap kejatuhan nilai</p>
+        <a href="#">Kembali ke halaman utama</a>
       </div>
       <div class="social-wrapper">
-        <p>Check out the latest news in social media</p>
+        <p>Semak berita terbaru dalam media sosial</p>
          <ul class="social__list">
           <li class="social__item">
             <a href="https://www.facebook.com/ccinofficial/" class="social__link fb">facebook</a>
@@ -703,7 +726,7 @@
           <li class="social__item">
             <a href="https://twitter.com/ccin_official" class="social__link twitter">twitter</a>
           </li>
-		   <li class="social__item">
+		      <li class="social__item">
             <a href="https://t.me/ccin_official" class="social__link telegram">telegram</a>
           </li>
           <li class="social__item">
@@ -713,15 +736,16 @@
             <a href="https://bitcointalk.org/index.php?topic=4948618" class="social__link bt">bt</a>
           </li>
         </ul>
-        <p>Still, have questions? <a href="mailto:info@ccin.io">info@ccin.io</a></p>
+        <p>Masih ada soalan? <a href="mailto:info@ccin.io">info@ccin.io</a></p>
       </div>
       <div class="sub-block">
-        <p>Subscribe for our newsletter:</p>
-        <button class="btn btn-outline">Enter your e-mail...</button>
-        <button class="btn">Subscribe</button>
+        <p>Langgan berita kami:</p>
+        <button class="btn btn-outline">Masukkan email anda</button>
+        <button class="btn">Langgan</button>
       </div>
     </div>
   </footer>
-  <script src="js/main.js?ver1.1"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="js/main.js?ver1.2"></script>
 </body>
 </html>

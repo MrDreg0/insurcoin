@@ -780,6 +780,10 @@ header .btn-outline {
   padding: 10px 0;
 }
 
+.japanese .market-size .container {
+  background-size: 18%;
+}
+
 .market-size h2 {
   text-align: left;
 }
@@ -859,6 +863,14 @@ header .btn-outline {
   margin-bottom: 24px;
 }
 
+.japanese .monetization li {
+  margin-bottom: 103px;
+}
+
+.malay .monetization li {
+  margin-bottom: 25px;
+}
+
 .monetization ul h3 {
   margin-bottom: 0;
 }
@@ -886,6 +898,10 @@ header .btn-outline {
 
 .chinese .potential .container {
   padding: 10px 0;
+}
+
+.japanese .potential .container {
+  background-size: contain;
 }
 
 .tokens-amount {

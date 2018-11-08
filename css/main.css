@@ -871,6 +871,10 @@ header .btn-outline {
   margin-bottom: 25px;
 }
 
+.dutch .monetization li {
+  margin-bottom: 24px;
+}
+
 .monetization ul h3 {
   margin-bottom: 0;
 }

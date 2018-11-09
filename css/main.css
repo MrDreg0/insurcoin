@@ -839,7 +839,14 @@ header .btn-outline {
   margin-bottom: 46px;
 }
 
-.vietnamese .monetization li {
+.vietnamese .monetization li,
+.spanish .monetization li,
+.indonesian .monetization li,
+.french .monetization li,
+.malay .monetization li,
+.dutch .monetization li,
+.port .monetization li,
+.italian .monetization li {
   margin-bottom: 24px;
 }
 
@@ -851,28 +858,8 @@ header .btn-outline {
   margin-bottom: 102px;
 }
 
-.spanish .monetization li {
-  margin-bottom: 24px;
-}
-
-.indonesian .monetization li {
-  margin-bottom: 24px;
-}
-
-.french .monetization li {
-  margin-bottom: 24px;
-}
-
 .japanese .monetization li {
   margin-bottom: 103px;
-}
-
-.malay .monetization li {
-  margin-bottom: 25px;
-}
-
-.dutch .monetization li {
-  margin-bottom: 24px;
 }
 
 .monetization ul h3 {

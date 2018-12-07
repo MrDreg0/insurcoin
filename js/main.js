@@ -25,12 +25,12 @@ $(document).ready(function(){
     evt.preventDefault();
     $(".nav-block").toggleClass("menu-open");
   })
-  let graphFill = $(".graph-fill").data("graphPeriod") * 15.5 + "%";
+  let graphFill = $(".graph-fill").data("graphPeriod") * 16.5 + "%";
   $(".graph-fill").animate({
     width: graphFill,
     opacity: "1"
   }, 1000);
-  let costFill = $(".cost-fill").data("costPrice") / 10000000 * 100 + "%";
+  let costFill = $(".cost-fill").data("costPrice") / 100000000 * 100 + "%";
   $(".cost-fill").animate({
     width: costFill,
     opacity: "1"
